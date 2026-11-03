@@ -159,21 +159,11 @@ footer {
   padding: 1.5rem 1rem;
 }
 
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.social-links a {
-  color: var(--white);
-}
-
-.social-links a:hover {
-  text-decoration: none;
-}
 
 
+
+
+/* Social media links */
 .social-links {
   display: flex;
   justify-content: center;
@@ -188,6 +178,8 @@ footer {
   width: 48px;
   height: 48px;
   border-radius: 50%;
+  color: var(--white);
+  text-decoration: none;
 }
 
 .social-links img {
@@ -201,6 +193,6 @@ footer {
 }
 
 .social-links a:focus-visible {
-  outline: 3px solid white;
+  outline: 3px solid var(--white);
   outline-offset: 3px;
 }
