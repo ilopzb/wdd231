@@ -1,0 +1,77 @@
+
+/* ====================================
+   BOGOTÁ COMMUNITY CHAMBER
+   Desktop Styles
+==================================== */
+
+@media screen and (min-width: 768px) {
+
+  /* Header */
+  header {
+    padding: 1.5rem 2rem;
+  }
+
+  .branding img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .branding span {
+    font-size: 1.5rem;
+  }
+
+  /* Hide Hamburger Menu */
+  #menu {
+    display: none;
+  }
+
+  /* Desktop Navigation */
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  nav a {
+    padding: 1rem 2rem;
+  }
+
+  /* Main Content */
+  main {
+    padding: 2rem;
+  }
+
+  main h1 {
+    font-size: 2rem;
+  }
+
+  /* Business Directory Grid */
+  #members.grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  #members section {
+    padding: 1.5rem;
+  }
+
+  /* Business Directory List */
+  #members.list section {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
+  }
+
+  /* Footer */
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: left;
+    align-items: start;
+  }
+
+  .social {
+    justify-content: center;
+  }
+}

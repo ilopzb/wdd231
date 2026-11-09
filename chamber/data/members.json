@@ -1,0 +1,69 @@
+
+{
+  "members": [
+    {
+      "name": "Andes Coffee House",
+      "address": "Chapinero, Bogotá",
+      "phone": "+57 601 555 0101",
+      "website": "https://example.com",
+      "image": "andes-coffee.webp",
+      "membership": 3
+    },
+    {
+      "name": "Capital Tech Solutions",
+      "address": "Usaquén, Bogotá",
+      "phone": "+57 601 555 0102",
+      "website": "https://example.com",
+      "image": "capital-tech.webp",
+      "membership": 3
+    },
+    {
+      "name": "Bogotá Creative Studio",
+      "address": "Teusaquillo, Bogotá",
+      "phone": "+57 601 555 0103",
+      "website": "https://example.com",
+      "image": "bogota-creative.webp",
+      "membership": 2
+    },
+    {
+      "name": "Green City Market",
+      "address": "Suba, Bogotá",
+      "phone": "+57 601 555 0104",
+      "website": "https://example.com",
+      "image": "green-city.webp",
+      "membership": 2
+    },
+    {
+      "name": "Sabana Business Consulting",
+      "address": "Chicó, Bogotá",
+      "phone": "+57 601 555 0105",
+      "website": "https://example.com",
+      "image": "sabana-consulting.webp",
+      "membership": 1
+    },
+    {
+      "name": "Colombia Fitness Center",
+      "address": "Cedritos, Bogotá",
+      "phone": "+57 601 555 0106",
+      "website": "https://example.com",
+      "image": "colombia-fitness.webp",
+      "membership": 1
+    },
+    {
+      "name": "Urban Design Architects",
+      "address": "La Candelaria, Bogotá",
+      "phone": "+57 601 555 0107",
+      "website": "https://example.com",
+      "image": "urban-design.webp",
+      "membership": 2
+    },
+    {
+      "name": "Bogotá Digital Marketing",
+      "address": "Fontibón, Bogotá",
+      "phone": "+57 601 555 0108",
+      "website": "https://example.com",
+      "image": "digital-marketing.webp",
+      "membership": 1
+    }
+  ]
+}

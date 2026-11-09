@@ -1,0 +1,556 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site plan for the Bogotá Community Chamber website project.">
+  <meta name="author" content="Israel Lopez">
+  <title>Bogotá Community Chamber | Site Plan</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #17324d;
+      --secondary: #087e83;
+      --accent: #d6a64c;
+      --background: #f5f7fa;
+      --text: #182532;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--background);
+      color: var(--text);
+      font-family: "Roboto", Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    h1, h2, h3 {
+      font-family: "Montserrat", sans-serif;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      margin: 0;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    section {
+      background-color: var(--white);
+      margin: 1.5rem 0;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      color: var(--primary);
+      border-bottom: 3px solid var(--secondary);
+      padding-bottom: 0.5rem;
+    }
+
+    h3 {
+      color: var(--secondary);
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .color-palette {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit, minmax(140px, 1fr)
+      );
+      gap: 1rem;
+    }
+
+    .color-card {
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .color-box {
+      height: 80px;
+    }
+
+    .color-card p {
+      padding: 0.5rem;
+      margin: 0;
+    }
+
+    .primary {
+      background-color: var(--primary);
+    }
+
+    .secondary {
+      background-color: var(--secondary);
+    }
+
+    .accent {
+      background-color: var(--accent);
+    }
+
+    .background {
+      background-color: var(--background);
+    }
+
+    .text-color {
+      background-color: var(--text);
+    }
+
+    .sitemap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .page-box {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 1rem;
+      border-radius: 5px;
+      text-align: center;
+      min-width: 130px;
+    }
+
+    .wireframe {
+      border: 2px solid var(--primary);
+      padding: 1rem;
+      margin-top: 1rem;
+      background-color: #fff;
+    }
+
+    .wire-header,
+    .wire-nav,
+    .wire-hero,
+    .wire-footer,
+    .wire-panel {
+      border: 2px dashed #7d8790;
+      padding: 1rem;
+      text-align: center;
+      margin-bottom: 0.75rem;
+      background-color: #edf1f5;
+    }
+
+    .wire-hero {
+      min-height: 120px;
+      display: grid;
+      place-items: center;
+    }
+
+    .wire-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+    }
+
+    .wire-grid .wire-panel {
+      min-height: 100px;
+    }
+
+    .mobile-wireframe {
+      max-width: 350px;
+      margin: 1rem auto;
+    }
+
+    .mobile-wireframe .wire-grid {
+      grid-template-columns: 1fr;
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: var(--white);
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 0.75rem;
+      }
+
+      section {
+        padding: 1rem;
+      }
+
+      .wire-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Bogotá Community Chamber</h1>
+    <p>Website Planning Document | WDD 231</p>
+    <p>Connecting Businesses. Growing Together.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>1. Site Name</h2>
+      <p><strong>Bogotá Community Chamber</strong></p>
+      <p>
+        This name represents a chamber of commerce
+        focused on connecting businesses and supporting
+        economic development in Bogotá, Colombia.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Site Purpose</h2>
+      <p>
+        The Bogotá Community Chamber website will
+        serve as a resource hub for local businesses,
+        entrepreneurs, residents, and investors.
+      </p>
+      <p>
+        The website will provide a business directory,
+        information about networking events, membership
+        opportunities, and resources for business growth.
+      </p>
+      <p>
+        Its main purpose is to support local economic
+        development and strengthen connections within
+        Bogotá's business community.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. Target Market</h2>
+      <ul>
+        <li>Small and medium business owners in Bogotá.</li>
+        <li>Entrepreneurs interested in starting businesses.</li>
+        <li>Local residents searching for products and services.</li>
+        <li>Investors seeking business opportunities.</li>
+        <li>Professionals interested in networking events.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Site Goals</h2>
+      <ul>
+        <li>
+          Increase visibility for local businesses
+          through an online business directory.
+        </li>
+        <li>
+          Encourage chamber membership by explaining
+          benefits and providing an application form.
+        </li>
+        <li>
+          Promote networking events and business workshops.
+        </li>
+        <li>
+          Support economic development in Bogotá.
+        </li>
+        <li>
+          Help residents discover local products and services.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. User Personas</h2>
+
+      <h3>Camila - Small Business Owner</h3>
+      <p>
+        Camila is a 32-year-old entrepreneur who operates
+        a small clothing boutique in Bogotá. She wants
+        to advertise her business, connect with other
+        entrepreneurs, and participate in networking events.
+      </p>
+
+      <h3>Andrés - Business Executive</h3>
+      <p>
+        Andrés is a 45-year-old company manager.
+        He is interested in business partnerships,
+        economic development opportunities, and
+        professional networking.
+      </p>
+
+      <h3>Sofia - New Resident</h3>
+      <p>
+        Sofia is a 28-year-old professional who recently
+        moved to Bogotá. She wants to discover local
+        businesses, find services, and learn about
+        community events.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. User Scenarios</h2>
+      <ul>
+        <li>
+          A business owner wants to join the chamber
+          and visits the membership page to learn
+          about benefits and application requirements.
+        </li>
+        <li>
+          A resident wants to find a local restaurant
+          and searches the business directory.
+        </li>
+        <li>
+          An entrepreneur wants to attend a networking
+          event and checks the homepage for upcoming events.
+        </li>
+        <li>
+          A potential investor wants to learn more
+          about Bogotá's business environment
+          and explores the community information.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. SEO Plan</h2>
+      <ul>
+        <li>
+          Use relevant keywords such as "Bogotá businesses",
+          "Bogotá business directory", and
+          "business networking in Bogotá".
+        </li>
+        <li>
+          Include unique page titles and meta descriptions.
+        </li>
+        <li>
+          Use semantic HTML and appropriate heading levels.
+        </li>
+        <li>
+          Include descriptive alternative text for images.
+        </li>
+        <li>
+          Optimize images and page loading performance.
+        </li>
+        <li>
+          Encourage backlinks from participating businesses.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. Design Brief</h2>
+      <p>
+        The website will use a modern, clean, and
+        professional design that reflects Bogotá's
+        growing business community.
+      </p>
+
+      <h3>Color Scheme</h3>
+
+      <div class="color-palette">
+        <div class="color-card">
+          <div class="color-box primary"></div>
+          <p>Primary</p>
+          <p>#17324D</p>
+        </div>
+
+        <div class="color-card">
+          <div class="color-box secondary"></div>
+          <p>Secondary</p>
+          <p>#087E83</p>
+        </div>
+
+        <div class="color-card">
+          <div class="color-box accent"></div>
+          <p>Accent</p>
+          <p>#D6A64C</p>
+        </div>
+
+        <div class="color-card">
+          <div class="color-box background"></div>
+          <p>Background</p>
+          <p>#F5F7FA</p>
+        </div>
+
+        <div class="color-card">
+          <div class="color-box text-color"></div>
+          <p>Text</p>
+          <p>#182532</p>
+        </div>
+      </div>
+
+      <h3>Typography</h3>
+      <p>
+        <strong>Headings:</strong> Montserrat
+      </p>
+      <p>
+        <strong>Body:</strong> Roboto
+      </p>
+
+      <h3>Layout</h3>
+      <p>
+        The site will use responsive layouts, CSS Grid,
+        and Flexbox. Navigation will display horizontally
+        on larger screens and use a hamburger menu
+        on mobile devices.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. Site Map</h2>
+      <p>
+        The website will include four main pages:
+      </p>
+
+      <div class="sitemap">
+        <div class="page-box">Home</div>
+        <div class="page-box">Discover</div>
+        <div class="page-box">Directory</div>
+        <div class="page-box">Join</div>
+      </div>
+
+      <h3>Page Descriptions</h3>
+      <ul>
+        <li>
+          <strong>Home:</strong>
+          Introduction, upcoming events, weather,
+          and featured chamber members.
+        </li>
+        <li>
+          <strong>Discover:</strong>
+          Information about Bogotá, attractions,
+          and community highlights.
+        </li>
+        <li>
+          <strong>Directory:</strong>
+          Searchable and filterable local business listings.
+        </li>
+        <li>
+          <strong>Join:</strong>
+          Membership benefits, levels,
+          and registration form.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>10. Wireframes</h2>
+
+      <h3>Desktop Home Page</h3>
+      <div class="wireframe">
+        <div class="wire-header">
+          Logo | Bogotá Community Chamber
+        </div>
+
+        <div class="wire-nav">
+          Home | Discover | Directory | Join
+        </div>
+
+        <div class="wire-hero">
+          Hero Image and Call to Action
+        </div>
+
+        <div class="wire-grid">
+          <div class="wire-panel">
+            Upcoming Events
+          </div>
+
+          <div class="wire-panel">
+            Current Weather
+          </div>
+
+          <div class="wire-panel">
+            Weather Forecast
+          </div>
+        </div>
+
+        <div class="wire-grid">
+          <div class="wire-panel">
+            Member Spotlight
+          </div>
+
+          <div class="wire-panel">
+            Member Spotlight
+          </div>
+
+          <div class="wire-panel">
+            Member Spotlight
+          </div>
+        </div>
+
+        <div class="wire-footer">
+          Contact Information | Social Media | Footer
+        </div>
+      </div>
+
+      <h3>Mobile Home Page</h3>
+      <div class="wireframe mobile-wireframe">
+        <div class="wire-header">
+          Logo | Chamber Name | Menu
+        </div>
+
+        <div class="wire-hero">
+          Hero Image and Call to Action
+        </div>
+
+        <div class="wire-grid">
+          <div class="wire-panel">
+            Upcoming Events
+          </div>
+
+          <div class="wire-panel">
+            Current Weather
+          </div>
+
+          <div class="wire-panel">
+            Weather Forecast
+          </div>
+
+          <div class="wire-panel">
+            Member Spotlight
+          </div>
+
+          <div class="wire-panel">
+            Member Spotlight
+          </div>
+
+          <div class="wire-panel">
+            Member Spotlight
+          </div>
+        </div>
+
+        <div class="wire-footer">
+          Contact | Social Links | Footer
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>WDD 231 - Bogotá Community Chamber Site Plan</p>
+    <p>Israel Lopez | BYU-Idaho</p>
+    <p>Educational Project - Not an Official Chamber Website</p>
+  </footer>
+</body>
+</html>

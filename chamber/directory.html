@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Explore local businesses and chamber members in Bogotá, Colombia. Discover services, connect with entrepreneurs, and support our business community."
+  >
+  <meta name="author" content="Israel Lopez">
+
+  <!-- Facebook Open Graph Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta
+    property="og:title"
+    content="Business Directory | Bogotá Community Chamber"
+  >
+  <meta
+    property="og:description"
+    content="Discover and support local businesses in Bogotá through our community chamber business directory."
+  >
+  <meta
+    property="og:image"
+    content="https://ilopzb.github.io/wdd231/chamber/images/bogota-chamber.webp"
+  >
+  <meta
+    property="og:url"
+    content="https://ilopzb.github.io/wdd231/chamber/directory.html"
+  >
+
+  <title>Business Directory | Bogotá Community Chamber</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- JavaScript -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+</head>
+
+
+<body>
+  <header>
+    <div class="branding">
+      <img
+        src="images/logo.svg"
+        alt="Bogotá Community Chamber logo"
+        width="60"
+        height="60"
+      >
+      <span>Bogotá Community Chamber</span>
+    </div>
+
+    <button
+      id="menu"
+      type="button"
+      aria-label="Toggle navigation menu"
+      aria-expanded="false"
+      aria-controls="navigation"
+    >
+      ☰
+    </button>
+  </header>
+
+  <nav id="navigation" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="discover.html">Discover</a>
+    <a href="directory.html" class="active" aria-current="page">
+      Directory
+    </a>
+    <a href="join.html">Join</a>
+  </nav>
+
+  <main>
+    <h1>Business Directory</h1>
+
+    <p>
+      Discover local businesses and services
+      in Bogotá, Colombia.
+    </p>
+
+    <div class="directory-controls">
+      <button id="grid" type="button" aria-pressed="true">
+        Grid View
+      </button>
+
+      <button id="list" type="button" aria-pressed="false">
+        List View
+      </button>
+    </div>
+
+    <div id="members" class="grid">
+      <!-- Business cards will be added using JavaScript -->
+    </div>
+  </main>
+
+  <footer>
+    <div class="contact">
+      <h2>Bogotá Community Chamber</h2>
+      <p>Bogotá, Colombia</p>
+      <p>Educational chamber of commerce project</p>
+    </div>
+
+    <div class="social">
+      <a href="https://www.facebook.com/" aria-label="Facebook">
+        Facebook
+      </a>
+      <a href="https://www.instagram.com/" aria-label="Instagram">
+        Instagram
+      </a>
+    </div>
+
+    <div class="development">
+      <p>WDD 231 | Israel Lopez</p>
+      <p>
+        &copy; <span id="currentyear"></span>
+        Bogotá Community Chamber
+      </p>
+      <p>
+        Last Modified: <span id="lastModified"></span>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

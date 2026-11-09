@@ -1,0 +1,24 @@
+
+{
+  "familyName": "Lopez",
+  "moveInDate": "2026-10-15",
+  "numberOfPeople": 3,
+  "visitedByBishopric": true,
+  "familyMembers": [
+    {
+      "name": "Israel Lopez",
+      "gender": "Male",
+      "birthdate": "1990-04-12"
+    },
+    {
+      "name": "Sarah Lopez",
+      "gender": "Female",
+      "birthdate": "1992-07-20"
+    },
+    {
+      "name": "Emma Lopez",
+      "gender": "Female",
+      "birthdate": "2020-01-10"
+    }
+  ]
+}

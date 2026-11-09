@@ -1,0 +1,228 @@
+
+/* ====================================
+   BOGOTÁ COMMUNITY CHAMBER
+   Mobile Styles
+==================================== */
+
+/* Global Variables */
+:root {
+  --primary: #17324d;
+  --secondary: #087e83;
+  --accent: #d6a64c;
+  --background: #f5f7fa;
+  --text: #182532;
+  --white: #ffffff;
+}
+
+/* Global Settings */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.branding img {
+  width: 50px;
+  height: 50px;
+}
+
+.branding span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* Hamburger Menu */
+#menu {
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  background: transparent;
+  color: var(--white);
+  padding: 0.4rem 0.7rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Navigation */
+nav {
+  display: none;
+  flex-direction: column;
+  background-color: var(--primary);
+}
+
+nav.open {
+  display: flex;
+}
+
+nav a {
+  display: block;
+  padding: 1rem;
+  color: var(--white);
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: var(--secondary);
+}
+
+/* Main Content */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  min-height: 400px;
+}
+
+main h1 {
+  color: var(--primary);
+  border-bottom: 3px solid var(--secondary);
+  padding-bottom: 0.5rem;
+}
+
+/* Directory View Buttons */
+.directory-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.directory-controls button {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.directory-controls button:hover,
+.directory-controls button[aria-pressed="true"] {
+  background-color: var(--secondary);
+}
+
+/* Business Directory Grid */
+#members.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* Business Cards */
+#members section {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#members section h2 {
+  color: var(--primary);
+  margin-top: 0;
+}
+
+#members section img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+}
+
+#members section a {
+  color: var(--secondary);
+  font-weight: 700;
+}
+
+/* Directory List View */
+#members.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#members.list section {
+  display: grid;
+  gap: 0.5rem;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 1rem;
+}
+
+#members.list section:nth-child(even) {
+  background-color: #e8eff3;
+}
+
+#members.list section img {
+  display: none;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+footer a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.development {
+  font-size: 0.9rem;
+}
+
+#lastModified {
+  color: #f3d58f;
+}
