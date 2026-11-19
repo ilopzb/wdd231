@@ -1,5 +1,5 @@
 // Chamber home page: live Bogotá weather and randomly selected member spotlights.
-const apiKey = "YOUR_OPENWEATHERMAP_API_KEY"; // Replace with your OpenWeatherMap key.
+const apiKey = "2acaf0ece719573833a9446e3b17594c"; // Replace with your OpenWeatherMap key.
 const bogotaLat = 4.7110;
 const bogotaLon = -74.0721;
 const currentWeather = document.querySelector("#current-weather");
@@ -7,7 +7,7 @@ const forecastList = document.querySelector("#forecast-list");
 const spotlights = document.querySelector("#spotlights");
 
 async function loadWeather() {
-  if (apiKey === "YOUR_OPENWEATHERMAP_API_KEY") {
+  if (apiKey === "2acaf0ece719573833a9446e3b17594c") {
     currentWeather.textContent = "Add your OpenWeatherMap API key in scripts/home.js to show live weather.";
     forecastList.innerHTML = "<li>Forecast available after API key setup.</li>";
     return;
