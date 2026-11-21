@@ -45,9 +45,8 @@ if (!params.has("first-name")) {
     ? new Intl.DateTimeFormat("en-US", {
         dateStyle: "long",
         timeStyle: "short",
-        timeZone: "America/Bogota",
-        timeZoneName: "short"
-      }).format(date)
+        timeZone: "America/Bogota"
+      }).format(date) + " (Bogotá time)"
     : "Not provided";
 
   row.append(term, value);
