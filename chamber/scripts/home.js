@@ -7,11 +7,7 @@ const forecastList = document.querySelector("#forecast-list");
 const spotlights = document.querySelector("#spotlights");
 
 async function loadWeather() {
-  if (apiKey === "2acaf0ece719573833a9446e3b17594c") {
-    currentWeather.textContent = "Add your OpenWeatherMap API key in scripts/home.js to show live weather.";
-    forecastList.innerHTML = "<li>Forecast available after API key setup.</li>";
-    return;
-  }
+  
 
   const query = `lat=${bogotaLat}&lon=${bogotaLon}&appid=${apiKey}&units=metric&lang=en`;
 
