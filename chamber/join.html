@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join the Bogotá Community Chamber. Compare nonprofit, Bronze, Silver, and Gold membership benefits and submit an application.">
+  <meta name="author" content="Israel Lopez">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Join the Chamber | Bogotá Community Chamber">
+  <meta property="og:description" content="Explore membership benefits and connect your organization to Bogotá's business community.">
+  <meta property="og:image" content="https://ilopzb.github.io/wdd231/chamber/images/bogota-chamber.webp">
+  <meta property="og:url" content="https://ilopzb.github.io/wdd231/chamber/join.html">
+  <title>Join the Chamber | Bogotá Community Chamber</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/join.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="branding">
+      <img src="images/logo.svg" alt="Bogotá Community Chamber logo" width="60" height="60">
+      <span>Bogotá Community Chamber</span>
+    </div>
+    <button id="menu" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navigation">☰</button>
+  </header>
+  <nav id="navigation" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="discover.html">Discover</a>
+    <a href="directory.html">Directory</a>
+    <a href="join.html" class="active" aria-current="page">Join</a>
+  </nav>
+
+  <main class="join-page">
+    <h1>Join the Bogotá Community Chamber</h1>
+    <p class="page-intro">Become part of a community that connects local businesses, shares resources, and creates opportunities. Choose the membership that fits your organization.</p>
+
+    <div class="join-layout">
+      <section class="form-panel" aria-labelledby="application-heading">
+        <h2 id="application-heading">Membership Application</h2>
+        <p>Fields marked <span aria-hidden="true">*</span> are required.</p>
+
+        <form id="join-form" method="get" action="thankyou.html">
+          <label class="form-field" for="first-name">
+            First Name <span aria-hidden="true">*</span>
+            <input type="text" id="first-name" name="first-name" title="Enter your first name" autocomplete="given-name" required>
+          </label>
+
+          <label class="form-field" for="last-name">
+            Last Name <span aria-hidden="true">*</span>
+            <input type="text" id="last-name" name="last-name" title="Enter your last name" autocomplete="family-name" required>
+          </label>
+
+          <label class="form-field" for="organization-title">
+            Organizational Title
+            <input type="text" id="organization-title" name="organization-title" title="At least 7 characters: letters, hyphens, and spaces only" autocomplete="organization-title" pattern="[\p{L} \-]{7,}" minlength="7">
+            <small>Optional. At least 7 letters/characters; letters, hyphens, and spaces only.</small>
+          </label>
+
+          <label class="form-field" for="email">
+            Email Address <span aria-hidden="true">*</span>
+            <input type="email" id="email" name="email" title="Enter a valid email address" autocomplete="email" placeholder="you@example.com" required>
+          </label>
+
+          <label class="form-field" for="phone">
+            Mobile Phone <span aria-hidden="true">*</span>
+            <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" autocomplete="tel" placeholder="+57 300 123 4567" required>
+          </label>
+
+          <label class="form-field" for="organization">
+            Business / Organization Name <span aria-hidden="true">*</span>
+            <input type="text" id="organization" name="organization" title="Enter the name of your business or organization" autocomplete="organization" required>
+          </label>
+
+          <label class="form-field" for="membership">
+            Membership Level <span aria-hidden="true">*</span>
+            <select id="membership" name="membership" title="Choose a membership level" required>
+              <option value="" disabled selected>Choose a level</option>
+              <option value="np">NP Membership — No fee</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+          </label>
+
+          <label class="form-field" for="description">
+            Business / Organization Description
+            <textarea id="description" name="description" title="Describe your business or organization" rows="5" placeholder="Tell us what your organization does..."></textarea>
+          </label>
+
+          <input type="hidden" id="timestamp" name="timestamp">
+          <button class="submit-button" type="submit">Submit Membership Application</button>
+        </form>
+      </section>
+
+      <aside class="membership-section" aria-labelledby="levels-heading">
+        <h2 id="levels-heading">Membership Levels</h2>
+        <p>Explore benefits before choosing a level. Fees shown are illustrative for this educational project.</p>
+        <div class="membership-list">
+          <article class="membership-card np">
+            <h3>NP Membership</h3>
+            <p class="membership-price">Free</p>
+            <p>For nonprofit organizations</p>
+            <a href="#np-dialog" data-dialog="np-dialog" aria-haspopup="dialog">View benefits</a>
+          </article>
+          <article class="membership-card bronze">
+            <h3>Bronze Membership</h3>
+            <p class="membership-price">COP 300,000 / year</p>
+            <p>Build local connections</p>
+            <a href="#bronze-dialog" data-dialog="bronze-dialog" aria-haspopup="dialog">View benefits</a>
+          </article>
+          <article class="membership-card silver">
+            <h3>Silver Membership</h3>
+            <p class="membership-price">COP 600,000 / year</p>
+            <p>Expand your visibility</p>
+            <a href="#silver-dialog" data-dialog="silver-dialog" aria-haspopup="dialog">View benefits</a>
+          </article>
+          <article class="membership-card gold">
+            <h3>Gold Membership</h3>
+            <p class="membership-price">COP 1,200,000 / year</p>
+            <p>Maximum exposure and support</p>
+            <a href="#gold-dialog" data-dialog="gold-dialog" aria-haspopup="dialog">View benefits</a>
+          </article>
+        </div>
+      </aside>
+    </div>
+
+    <dialog id="np-dialog" class="membership-dialog" aria-labelledby="np-dialog-title">
+      <h2 id="np-dialog-title">NP Membership</h2>
+      <p><strong>Cost:</strong> Free for nonprofit organizations.</p>
+      <ul>
+        <li>Listing in the chamber's member directory</li>
+        <li>Chamber news and community updates</li>
+        <li>Access to free community networking opportunities</li>
+      </ul>
+      <button type="button" class="dialog-close">Close</button>
+    </dialog>
+
+    <dialog id="bronze-dialog" class="membership-dialog" aria-labelledby="bronze-dialog-title">
+      <h2 id="bronze-dialog-title">Bronze Membership</h2>
+      <p><strong>Cost:</strong> COP 300,000 per year (sample fee).</p>
+      <ul>
+        <li>All NP-level community resources</li>
+        <li>Business directory listing and member updates</li>
+        <li>Access to member networking events</li>
+        <li>Discounts on selected workshops and training</li>
+      </ul>
+      <button type="button" class="dialog-close">Close</button>
+    </dialog>
+
+    <dialog id="silver-dialog" class="membership-dialog" aria-labelledby="silver-dialog-title">
+      <h2 id="silver-dialog-title">Silver Membership</h2>
+      <p><strong>Cost:</strong> COP 600,000 per year (sample fee).</p>
+      <ul>
+        <li>All Bronze membership benefits</li>
+        <li>Greater discounts on events and training</li>
+        <li>Eligibility for home page business spotlights</li>
+        <li>Member promotional opportunities</li>
+      </ul>
+      <button type="button" class="dialog-close">Close</button>
+    </dialog>
+
+    <dialog id="gold-dialog" class="membership-dialog" aria-labelledby="gold-dialog-title">
+      <h2 id="gold-dialog-title">Gold Membership</h2>
+      <p><strong>Cost:</strong> COP 1,200,000 per year (sample fee).</p>
+      <ul>
+        <li>All Silver membership benefits</li>
+        <li>Priority eligibility for home page spotlights</li>
+        <li>Featured advertising and marketing opportunities</li>
+        <li>Premium networking and training discounts</li>
+        <li>Priority invitation to chamber special events</li>
+      </ul>
+      <button type="button" class="dialog-close">Close</button>
+    </dialog>
+  </main>
+
+  <footer>
+    <div class="contact">
+      <h2>Bogotá Community Chamber</h2>
+      <p>Bogotá, Colombia</p>
+      <p>Educational chamber of commerce project</p>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/" aria-label="Facebook">Facebook</a>
+      <a href="https://www.instagram.com/" aria-label="Instagram">Instagram</a>
+    </div>
+    <div class="development">
+      <p>WDD 231 | Israel Lopez</p>
+      <p>&copy; <span id="currentyear"></span> Bogotá Community Chamber</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
