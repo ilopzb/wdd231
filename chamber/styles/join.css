@@ -1,0 +1,111 @@
+/* JOIN / THANK-YOU PAGE ONLY — uses shared chamber color variables. */
+.join-page, .thankyou-page { width: 100%; }
+.page-intro { max-width: 750px; margin-bottom: 2rem; }
+.join-layout { display: grid; gap: 1.5rem; align-items: start; }
+.form-panel, .membership-card, .thankyou-panel {
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 9%);
+}
+.form-panel { padding: 1.5rem; }
+.form-panel h2, .membership-section h2 { margin-top: 0; color: var(--primary); }
+.form-field { display: block; font-weight: 700; margin: 1rem 0; }
+.form-field input, .form-field select, .form-field textarea {
+  display: block;
+  width: 100%;
+  margin-top: .4rem;
+  padding: .75rem;
+  color: var(--text);
+  background: var(--white);
+  border: 1px solid #697e90;
+  border-radius: 5px;
+  font: inherit;
+  font-weight: 400;
+}
+.form-field textarea { min-height: 110px; resize: vertical; }
+.form-field small { display: block; margin-top: .3rem; color: #52606d; font-weight: 400; }
+.form-field input:focus-visible, .form-field select:focus-visible,
+.form-field textarea:focus-visible, .submit-button:focus-visible,
+.membership-card a:focus-visible, .dialog-close:focus-visible,
+.back-link:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+.submit-button, .dialog-close, .back-link {
+  display: inline-block;
+  padding: .85rem 1.2rem;
+  border: 0;
+  border-radius: 6px;
+  background: var(--secondary);
+  color: var(--white);
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+.submit-button:hover, .dialog-close:hover, .back-link:hover { background: var(--primary); }
+.submit-button { width: 100%; margin-top: .5rem; }
+.membership-list { display: grid; gap: 1rem; }
+.membership-card {
+  padding: 1.2rem;
+  border-top: 5px solid var(--secondary);
+  animation: reveal-membership .6s ease-out both;
+}
+.membership-card:nth-child(2) { animation-delay: .15s; }
+.membership-card:nth-child(3) { animation-delay: .3s; }
+.membership-card:nth-child(4) { animation-delay: .45s; }
+.membership-card.bronze { border-color: #97602a; }
+.membership-card.silver { border-color: #72818a; }
+.membership-card.gold { border-color: var(--accent); }
+.membership-card h3 { color: var(--primary); margin: 0; }
+.membership-price { font-weight: 700; margin: .5rem 0; color: var(--secondary); }
+.membership-card a { display: inline-block; color: #066269; font-weight: 700; }
+@keyframes reveal-membership {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.membership-dialog {
+  width: min(92vw, 510px);
+  max-height: 85vh;
+  padding: 1.5rem;
+  border: 0;
+  border-radius: 12px;
+  color: var(--text);
+  background: var(--white);
+  box-shadow: 0 8px 30px rgb(0 0 0 / 30%);
+}
+.membership-dialog::backdrop { background: rgb(10 25 40 / 65%); }
+.membership-dialog h2 { color: var(--primary); margin-top: 0; }
+.membership-dialog li { margin-bottom: .5rem; }
+.dialog-close { margin-top: .5rem; }
+.thankyou-panel { max-width: 790px; padding: 1.5rem; margin: 1rem auto; }
+.thankyou-check {
+  display: inline-grid;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--secondary);
+  color: var(--white);
+  font-size: 1.6rem;
+}
+.thankyou-panel h1 { margin-top: 1rem; }
+.demo-note { font-size: .9rem; color: #52606d; }
+#submission-details { margin: 1.5rem 0; }
+.submission-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .2rem;
+  padding: .75rem 0;
+  border-bottom: 1px solid #d7e0e8;
+}
+.submission-row dt { font-weight: 700; color: var(--primary); }
+.submission-row dd { margin: 0; overflow-wrap: anywhere; }
+@media (min-width: 768px) {
+  .join-layout { grid-template-columns: minmax(0, 1.2fr) minmax(310px, 1fr); }
+  .membership-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .submission-row { grid-template-columns: 180px minmax(0, 1fr); gap: 1rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .membership-card { animation: none; }
+}
