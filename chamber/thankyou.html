@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thank you for applying to join the Bogotá Community Chamber. Review the details you submitted.">
+  <meta name="author" content="Israel Lopez">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Application Received | Bogotá Community Chamber">
+  <meta property="og:description" content="Review your Bogotá Community Chamber membership application information.">
+  <meta property="og:image" content="https://ilopzb.github.io/wdd231/chamber/images/bogota-chamber.webp">
+  <meta property="og:url" content="https://ilopzb.github.io/wdd231/chamber/thankyou.html">
+  <title>Thank You | Bogotá Community Chamber</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/join.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="branding">
+      <img src="images/logo.svg" alt="Bogotá Community Chamber logo" width="60" height="60">
+      <span>Bogotá Community Chamber</span>
+    </div>
+    <button id="menu" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navigation">☰</button>
+  </header>
+  <nav id="navigation" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="discover.html">Discover</a>
+    <a href="directory.html">Directory</a>
+    <a href="join.html">Join</a>
+  </nav>
+
+  <main class="thankyou-page">
+    <section class="thankyou-panel" aria-labelledby="thankyou-heading">
+      <span class="thankyou-check" aria-hidden="true">✓</span>
+      <h1 id="thankyou-heading">Thank You for Your Application!</h1>
+      <p>We appreciate your interest in becoming part of the Bogotá Community Chamber. Here is a summary of the information entered in your form.</p>
+      <p class="demo-note">This is a WDD 231 educational demo: the confirmation appears in your browser and does not send an application to a real chamber.</p>
+      <section aria-labelledby="summary-heading" id="submission-section">
+        <h2 id="summary-heading">Application Details</h2>
+        <dl id="submission-details"></dl>
+      </section>
+      <p id="missing-application" hidden>No application details were provided. Please complete the form first.</p>
+      <a class="back-link" href="join.html">Back to Membership Form</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact">
+      <h2>Bogotá Community Chamber</h2>
+      <p>Bogotá, Colombia</p>
+      <p>Educational chamber of commerce project</p>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/" aria-label="Facebook">Facebook</a>
+      <a href="https://www.instagram.com/" aria-label="Instagram">Instagram</a>
+    </div>
+    <div class="development">
+      <p>WDD 231 | Israel Lopez</p>
+      <p>&copy; <span id="currentyear"></span> Bogotá Community Chamber</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
